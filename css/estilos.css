@@ -1,0 +1,135 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@keyframes puntos_test{
+	from{
+		transform: rotate(0deg);
+		margin-left: 0;
+	}to{
+		transform: rotate(360deg);
+		margin-left: 90vw;
+	}
+}
+@keyframes girar{
+	from{
+		transform: rotate(0deg);
+	}to{
+		transform: rotate(360deg);
+	}
+}
+body{background-color: #FFDC00; padding: 30px; font-family: Verdana;}
+pre{font-family: Verdana;}
+.menu{
+	background: white;
+	width: 80%;
+}
+.menu ul{
+	list-style: none;
+	margin: 0;
+	padding: ;
+}
+.menu ul li{
+	display: inline-block;
+}
+.menu ul li a{
+	color: black;
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+.menu ul li a:hover{
+	background-color: #757575;
+	color: white;
+
+}
+.lupa{
+	float: right;
+}
+.animacion{
+	position: relative;
+	left: 90%;
+	bottom: 40px;
+	width: 50px;
+	height: 50px;
+	border: 10px solid rgb(63, 63, 63  );
+	border-top: 10px solid rgb(255, 255, 255  );
+	border-radius: 50%;
+
+}
+.animacion:hover{
+	animation: girar 2s;
+}
+
+.main{
+		/*background-color: white;*/
+	margin: 10px;
+	margin-bottom: 50px;
+
+}
+.descripcion{
+	width: 67%;
+	float: left;
+	margin-right: 3%;
+	margin-bottom: 10px;
+	background-color: #3F3F3F;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 30px;
+}
+aside{
+	width: 30%;
+	float: left;
+	background-color: #FF8000;
+	padding: 10px;
+	border-radius: 10px;
+	box-sizing: border-box; /* para que el paddin' no interfiera con el tamaño del aside */
+	margin-bottom: 10px;
+}
+img{
+	margin: 10px;
+	width: 92%;
+}
+.puntos{
+	float: left;
+	display: inline-block;
+}
+.uno,.dos,.tres{
+	clear: both;
+	margin: 10px;
+	width: 15px;
+	height: 15px;
+	border: 10px;
+	background-color: #5D5C5C;
+	border-radius: 50%;
+	float: left;
+	display: inline-block;
+	border-top: 5px solid rgb(185, 2, 2);
+	border-right: 5px solid rgb(124, 73, 73);
+
+}
+.uno{animation: puntos_test; animation-duration: 1s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-direction: alternate;}
+.dos{animation: puntos_test; animation-duration: 2s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-direction: alternate;}
+.tres{animation: puntos_test; animation-duration: 3s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-direction: alternate;}
+
+.pies {
+
+	clear:both; /* ignora los float anteriors y posteriores*/ 
+	width: 100%
+	height: 20%;
+	max-height: 20%;
+	margin: 10px;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+}
+.pies img{
+	width: 100px;
+}
+.pies pre{
+	float: left;
+}

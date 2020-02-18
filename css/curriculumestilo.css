@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@keyframes cambio{
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+body{
+	width: 100%;
+	height: 100vh;
+	color: rgb(3, 3, 3);
+	background: linear-gradient(-45deg, #EDFFFD, #C1FFF8, #A3FFF5, #84FFF1, #62FFEE, #3AFFE9, #00FEE2);
+	background-size: 100% 100%;
+	position: relative;
+	animation: cambio 10s ease-in-out infinite;
+}
+a{
+	list-style: none;
+	font-style: none;
+	text-decoration: none;
+}
+section{
+	font-family: Verdana;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+img{
+	width: 15%;
+	float: left;
+	margin: 10px;
+}
+.top{
+	float: left;
+	width: 100%
+	padding: 10px;
+}
+.nombre{
+	margin: 10px;
+	padding: 10px;
+}
+.sobremi{
+	padding: 10px;
+	margin: 0px;
+	float: left;
+	width: 60%;
+	text-align: justify-all;
+}
+article{
+
+	padding: 10px;
+	margin: 10px;
+}
+aside{
+	font-family: Arial;
+	width: 30%;
+	margin: 10px;
+	padding: 10px;
+	float: left;
+	text-align: justify-all;
+}
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+pre{
+	font-family: Verdana;
+}
